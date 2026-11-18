@@ -1,0 +1,830 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090e1c">
+  <title>Scrum | Desenvolvimento Ágil</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a href="#" class="logo" id="home-link">SCRUM<span>.</span></a>
+    <div class="top-actions">
+      <span class="live-label">DESENVOLVIMENTO ÁGIL</span>
+      <button class="small-btn" id="fullscreen">⛶ Tela cheia</button>
+    </div>
+  </header>
+
+  <div class="progress-track">
+    <div id="progress"></div>
+  </div>
+
+  <main id="presentation">
+
+    <!-- 1. CAPA -->
+    <section class="slide active" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span>
+          TECNOLOGIA · COLABORAÇÃO · INOVAÇÃO
+        </div>
+
+        <h1>Trabalhar melhor.<br>
+          <span class="gradient">Entregar valor.</span>
+        </h1>
+
+        <p class="lead">
+          Como o Scrum organiza pessoas, tarefas e entregas para
+          transformar ideias em software funcional.
+        </p>
+
+        <button class="primary-btn" data-go="1">
+          Começar apresentação →
+        </button>
+
+        <div class="hero-stats">
+          <div><strong>3</strong><span>Responsabilidades</span></div>
+          <div><strong>5</strong><span>Eventos</span></div>
+          <div><strong>3</strong><span>Artefatos</span></div>
+        </div>
+      </div>
+
+      <div class="hero-image image-frame">
+        <img
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=85"
+          alt="Equipe colaborando em um projeto"
+        >
+        <div class="image-shade"></div>
+        <div class="image-label">INSPECIONAR · ADAPTAR · ENTREGAR</div>
+      </div>
+    </section>
+
+    <!-- 2. O QUE É SCRUM -->
+    <section class="slide" id="conceito">
+      <div class="section-head">
+        <span class="section-number">01 · CONCEITO</span>
+        <span class="section-label">ENTENDENDO O SCRUM</span>
+      </div>
+
+      <h2>O que é <span class="gradient">Scrum?</span></h2>
+
+      <p class="lead">
+        Scrum é um framework leve que ajuda pessoas e equipes a gerar
+        valor por meio de soluções adaptativas para problemas complexos.
+      </p>
+
+      <div class="grid three">
+        <article class="panel">
+          <div class="icon-box">🎯</div>
+          <h3>Objetivo</h3>
+          <p>Entregar valor, aprender com os resultados e responder
+          às mudanças ao longo do desenvolvimento.</p>
+        </article>
+
+        <article class="panel">
+          <div class="icon-box">🔄</div>
+          <h3>Ciclos curtos</h3>
+          <p>O trabalho é organizado em Sprints, permitindo
+          avaliar resultados com frequência.</p>
+        </article>
+
+        <article class="panel">
+          <div class="icon-box">🤝</div>
+          <h3>Colaboração</h3>
+          <p>As pessoas trabalham em conjunto, com transparência,
+          foco, abertura, respeito e compromisso.</p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Importante:</strong> Scrum não é uma linguagem de
+        programação nem uma sequência rígida de etapas. É um framework
+        baseado em empirismo e pensamento Lean.
+      </div>
+    </section>
+
+    <!-- 3. PRINCÍPIOS -->
+    <section class="slide" id="principios">
+      <div class="section-head">
+        <span class="section-number">02 · OBJETIVO</span>
+        <span class="section-label">COMO O SCRUM GERA VALOR</span>
+      </div>
+
+      <h2>Experimentar, avaliar e <span class="gradient">evoluir.</span></h2>
+
+      <div class="split-layout">
+        <div>
+          <p class="lead">
+            O Scrum trabalha com empirismo: decisões baseadas na
+            experiência, na observação e no que realmente acontece.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature">
+              <span>01</span>
+              <div><h3>Transparência</h3>
+                <p>O trabalho e os resultados precisam ser visíveis.</p></div>
+            </div>
+            <div class="feature">
+              <span>02</span>
+              <div><h3>Inspeção</h3>
+                <p>A equipe avalia frequentemente o progresso e o produto.</p></div>
+            </div>
+            <div class="feature">
+              <span>03</span>
+              <div><h3>Adaptação</h3>
+                <p>O plano é ajustado quando surgem novas evidências.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="illustration-card">
+          <img
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=85"
+            alt="Equipe discutindo o planejamento de um projeto"
+          >
+          <div class="illustration-caption">
+            <span class="tag purple">CICLO DE APRENDIZADO</span>
+            <h3>Planejar não basta.</h3>
+            <p>É preciso observar os resultados e melhorar as decisões.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PAPÉIS -->
+    <section class="slide" id="papeis">
+      <div class="section-head">
+        <span class="section-number">03 · RESPONSABILIDADES</span>
+        <span class="section-label">QUEM FAZ O QUÊ?</span>
+      </div>
+
+      <h2>Três responsabilidades. <span class="gradient">Um time.</span></h2>
+
+      <p class="lead">
+        O Scrum Team reúne pessoas com responsabilidades distintas
+        e complementares.
+      </p>
+
+      <div class="grid three">
+        <article class="panel role-card">
+          <div class="icon-box">🧭</div>
+          <span class="tag purple">VALOR DO PRODUTO</span>
+          <h3>Product Owner</h3>
+          <p>Responsável por maximizar o valor do produto.</p>
+          <ul>
+            <li>Define e comunica o Product Goal.</li>
+            <li>Ordena os itens do Product Backlog.</li>
+            <li>Ajuda a esclarecer prioridades.</li>
+          </ul>
+        </article>
+
+        <article class="panel role-card">
+          <div class="icon-box">🛠️</div>
+          <span class="tag blue">EFICÁCIA DO SCRUM</span>
+          <h3>Scrum Master</h3>
+          <p>Ajuda todos a compreender e aplicar o Scrum.</p>
+          <ul>
+            <li>Promove melhorias no trabalho.</li>
+            <li>Ajuda a remover impedimentos.</li>
+            <li>Orienta a equipe e a organização.</li>
+          </ul>
+        </article>
+
+        <article class="panel role-card">
+          <div class="icon-box">💻</div>
+          <span class="tag green">CONSTRUÇÃO</span>
+          <h3>Developers</h3>
+          <p>Criam o Incremento utilizável do produto.</p>
+          <ul>
+            <li>Planejam o trabalho da Sprint.</li>
+            <li>Desenvolvem e testam a solução.</li>
+            <li>Adaptam o plano diariamente.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Atenção:</strong> isso não significa que uma pessoa seja
+        chefe das outras. O Scrum Team é autogerenciável e multifuncional.
+      </div>
+    </section>
+
+    <!-- 5. SPRINT -->
+    <section class="slide" id="sprint">
+      <div class="section-head">
+        <span class="section-number">04 · SPRINTS</span>
+        <span class="section-label">O CICLO DE TRABALHO</span>
+      </div>
+
+      <h2>O que é uma <span class="gradient">Sprint?</span></h2>
+
+      <div class="split-layout">
+        <div>
+          <p class="lead">
+            É um período de duração fixa, de até um mês, no qual
+            a equipe trabalha para atingir um objetivo e produzir
+            um resultado utilizável.
+          </p>
+
+          <div class="mini-stats">
+            <div><strong>≤ 1 mês</strong><span>Duração máxima</span></div>
+            <div><strong>1 objetivo</strong><span>Foco da equipe</span></div>
+          </div>
+
+          <div class="callout">
+            Uma nova Sprint começa assim que a anterior termina.
+            Durante a Sprint, a qualidade não deve diminuir e o objetivo
+            da Sprint deve ser protegido.
+          </div>
+        </div>
+
+        <div class="illustration-card">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=85"
+            alt="Equipe trabalhando em computadores"
+          >
+          <div class="illustration-caption">
+            <span class="tag blue">CICLO DE ENTREGA</span>
+            <h3>Uma etapa de cada vez.</h3>
+            <p>Planejar, construir, verificar e aprender.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SPRINT PLANNING -->
+    <section class="slide" id="planning">
+      <div class="section-head">
+        <span class="section-number">05 · EVENTOS</span>
+        <span class="section-label">SPRINT PLANNING</span>
+      </div>
+
+      <h2>Como a equipe <span class="gradient">começa?</span></h2>
+
+      <p class="lead">
+        A Sprint Planning inicia a Sprint e define o plano de trabalho
+        para o ciclo que está começando.
+      </p>
+
+      <div class="grid three">
+        <article class="panel">
+          <div class="icon-box">❓</div>
+          <h3>Por quê?</h3>
+          <p>Qual é o valor e o objetivo que queremos alcançar nesta Sprint?</p>
+        </article>
+
+        <article class="panel">
+          <div class="icon-box">📋</div>
+          <h3>O quê?</h3>
+          <p>Quais itens do Product Backlog podem ser selecionados para a Sprint?</p>
+        </article>
+
+        <article class="panel">
+          <div class="icon-box">⚙️</div>
+          <h3>Como?</h3>
+          <p>Como os Developers planejam realizar o trabalho selecionado?</p>
+        </article>
+      </div>
+
+      <div class="callout">
+        O resultado inclui uma Sprint Goal, os itens selecionados e
+        um plano inicial para entregar o Incremento.
+      </div>
+    </section>
+
+    <!-- 7. DAILY SCRUM E DESENVOLVIMENTO -->
+    <section class="slide" id="daily">
+      <div class="section-head">
+        <span class="section-number">06 · EVENTOS</span>
+        <span class="section-label">DAILY SCRUM</span>
+      </div>
+
+      <h2>Alinhar e <span class="gradient">adaptar.</span></h2>
+
+      <div class="split-layout">
+        <div>
+          <p class="lead">
+            O Daily Scrum é um evento diário de 15 minutos para os
+            Developers inspecionarem o progresso em direção à Sprint Goal
+            e adaptarem seu plano.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature">
+              <span>01</span>
+              <div><h3>Ver o progresso</h3>
+                <p>O que já foi produzido em direção ao objetivo?</p></div>
+            </div>
+            <div class="feature">
+              <span>02</span>
+              <div><h3>Identificar obstáculos</h3>
+                <p>O que está dificultando o andamento do trabalho?</p></div>
+            </div>
+            <div class="feature">
+              <span>03</span>
+              <div><h3>Ajustar o plano</h3>
+                <p>Qual será a melhor forma de continuar?</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="illustration-card">
+          <img
+            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=85"
+            alt="Pessoas reunidas para conversar e trocar ideias"
+          >
+          <div class="illustration-caption">
+            <span class="tag blue">15 MINUTOS</span>
+            <h3>Conversas objetivas.</h3>
+            <p>O Daily não precisa ser um relatório para um chefe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. REVIEW E RETROSPECTIVE -->
+    <section class="slide" id="review">
+      <div class="section-head">
+        <span class="section-number">07 · EVENTOS</span>
+        <span class="section-label">INSPEÇÃO E MELHORIA</span>
+      </div>
+
+      <h2>Aprender com o que aconteceu.</h2>
+
+      <div class="grid two">
+        <article class="panel">
+          <div class="icon-box">🔍</div>
+          <span class="tag blue">PRODUTO</span>
+          <h3>Sprint Review</h3>
+          <p>
+            O Scrum Team e os stakeholders inspecionam os resultados
+            da Sprint e discutem o que fazer em seguida.
+          </p>
+          <p><strong>Pergunta central:</strong> o que aprendemos sobre o produto?</p>
+        </article>
+
+        <article class="panel">
+          <div class="icon-box">🔧</div>
+          <span class="tag purple">PROCESSO</span>
+          <h3>Sprint Retrospective</h3>
+          <p>
+            O Scrum Team examina como trabalhou e identifica mudanças
+            para melhorar a qualidade e a eficácia.
+          </p>
+          <p><strong>Pergunta central:</strong> como podemos trabalhar melhor?</p>
+        </article>
+      </div>
+
+      <div class="callout">
+        A Sprint contém quatro eventos formais: Planning, Daily Scrum,
+        Review e Retrospective. A própria Sprint é o evento contêiner.
+      </div>
+    </section>
+
+    <!-- 9. PRODUCT BACKLOG -->
+    <section class="slide" id="product-backlog">
+      <div class="section-head">
+        <span class="section-number">08 · ARTEFATOS</span>
+        <span class="section-label">PRODUCT BACKLOG</span>
+      </div>
+
+      <h2>O que o produto <span class="gradient">precisa?</span></h2>
+
+      <div class="split-layout">
+        <div>
+          <p class="lead">
+            O Product Backlog é uma lista ordenada e evolutiva
+            do que pode melhorar o produto.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature"><span>01</span><div><h3>Funcionalidades</h3>
+              <p>Cadastro, login, relatórios e novas ferramentas.</p></div></div>
+            <div class="feature"><span>02</span><div><h3>Correções</h3>
+              <p>Problemas que precisam ser resolvidos.</p></div></div>
+            <div class="feature"><span>03</span><div><h3>Prioridades</h3>
+              <p>Itens organizados conforme o valor e as necessidades.</p></div></div>
+          </div>
+        </div>
+
+        <div class="panel backlog-visual">
+          <span class="tag purple">COMPROMISSO: PRODUCT GOAL</span>
+          <h3>Exemplo de backlog</h3>
+          <div class="backlog-item"><span>01</span> Criar cadastro de usuário</div>
+          <div class="backlog-item"><span>02</span> Permitir login seguro</div>
+          <div class="backlog-item"><span>03</span> Criar lista de tarefas</div>
+          <div class="backlog-item"><span>04</span> Enviar notificações</div>
+          <p class="muted">Uma lista viva: prioridades podem mudar conforme o aprendizado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. SPRINT BACKLOG E INCREMENTO -->
+    <section class="slide" id="incremento">
+      <div class="section-head">
+        <span class="section-number">09 · ARTEFATOS</span>
+        <span class="section-label">DO PLANO À ENTREGA</span>
+      </div>
+
+      <h2>Planejar, construir e entregar.</h2>
+
+      <div class="grid two">
+        <article class="panel">
+          <div class="icon-box">🗓️</div>
+          <span class="tag blue">SPRINT GOAL</span>
+          <h3>Sprint Backlog</h3>
+          <p>
+            Reúne o objetivo da Sprint, os itens selecionados do
+            Product Backlog e o plano de trabalho dos Developers.
+          </p>
+          <div class="example-line">
+            <strong>Exemplo:</strong> desenvolver o cadastro durante
+            a Sprint e verificar seus campos obrigatórios.
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="icon-box">🚀</div>
+          <span class="tag green">DEFINITION OF DONE</span>
+          <h3>Incremento</h3>
+          <p>
+            É um resultado utilizável que atende à Definition of Done.
+            Pode ser combinado com incrementos anteriores.
+          </p>
+          <div class="example-line">
+            <strong>Exemplo:</strong> tela de cadastro funcional,
+            integrada e testada conforme os critérios definidos.
+          </div>
+        </article>
+      </div>
+
+      <div class="callout">
+        Mover uma tarefa para “concluído” não basta. O trabalho precisa
+        atender à Definition of Done para fazer parte do Incremento.
+      </div>
+    </section>
+
+    <!-- 11. VANTAGENS -->
+    <section class="slide" id="vantagens">
+      <div class="section-head">
+        <span class="section-number">10 · VANTAGENS</span>
+        <span class="section-label">PONTOS FORTES</span>
+      </div>
+
+      <h2>Por que utilizar Scrum?</h2>
+
+      <div class="grid two">
+        <article class="panel">
+          <h3><span class="positive">✓</span> Entregas frequentes</h3>
+          <p>A equipe pode disponibilizar partes funcionais do produto ao longo do desenvolvimento.</p>
+        </article>
+
+        <article class="panel">
+          <h3><span class="positive">✓</span> Feedback contínuo</h3>
+          <p>Usuários e stakeholders ajudam a verificar se o produto atende às necessidades.</p>
+        </article>
+
+        <article class="panel">
+          <h3><span class="positive">✓</span> Transparência</h3>
+          <p>O andamento e os problemas ficam mais visíveis para o Scrum Team.</p>
+        </article>
+
+        <article class="panel">
+          <h3><span class="positive">✓</span> Adaptação</h3>
+          <p>As prioridades podem ser revistas com base em novas informações.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 12. DESAFIOS -->
+    <section class="slide" id="desafios">
+      <div class="section-head">
+        <span class="section-number">11 · DESAFIOS</span>
+        <span class="section-label">LIMITES E CUIDADOS</span>
+      </div>
+
+      <h2>O que pode dar errado?</h2>
+
+      <div class="grid two">
+        <article class="panel">
+          <h3><span class="negative">×</span> Reuniões improdutivas</h3>
+          <p>Eventos sem objetivo podem consumir tempo sem melhorar as decisões.</p>
+        </article>
+
+        <article class="panel">
+          <h3><span class="negative">×</span> Falta de colaboração</h3>
+          <p>Comunicação insuficiente pode causar atrasos e retrabalho.</p>
+        </article>
+
+        <article class="panel">
+          <h3><span class="negative">×</span> Prioridades confusas</h3>
+          <p>Sem um objetivo claro, a equipe pode perder o foco do produto.</p>
+        </article>
+
+        <article class="panel">
+          <h3><span class="negative">×</span> Feedback insuficiente</h3>
+          <p>Sem avaliar os resultados, decisões importantes podem ser tomadas com pouca informação.</p>
+        </article>
+      </div>
+
+      <div class="callout">
+        Scrum não elimina riscos nem garante o sucesso. Seus benefícios
+        dependem de uma aplicação adequada e da participação do time.
+      </div>
+    </section>
+
+    <!-- 13. QUANDO É INDICADO -->
+    <section class="slide" id="indicacoes">
+      <div class="section-head">
+        <span class="section-number">12 · APLICAÇÕES</span>
+        <span class="section-label">QUANDO UTILIZAR?</span>
+      </div>
+
+      <h2>Projetos que precisam <span class="gradient">evoluir.</span></h2>
+
+      <div class="split-layout">
+        <div>
+          <p class="lead">
+            Scrum costuma ser indicado quando há incerteza, complexidade
+            ou necessidade de receber feedback frequente.
+          </p>
+          <div class="feature-list">
+            <div class="feature"><span>01</span><div><h3>Aplicativos</h3>
+              <p>Novas funções e melhorias conforme o uso.</p></div></div>
+            <div class="feature"><span>02</span><div><h3>Plataformas web</h3>
+              <p>Funcionalidades desenvolvidas em partes.</p></div></div>
+            <div class="feature"><span>03</span><div><h3>Produtos digitais</h3>
+              <p>Validação de ideias e adaptação de prioridades.</p></div></div>
+          </div>
+        </div>
+
+        <div class="illustration-card">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85"
+            alt="Análise de informações em um computador"
+          >
+          <div class="illustration-caption">
+            <span class="tag blue">FEEDBACK E EVOLUÇÃO</span>
+            <h3>Aprender com o uso real.</h3>
+            <p>Os resultados ajudam a orientar as próximas prioridades.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        Projetos com requisitos muito estáveis também podem utilizar
+        Scrum, mas uma abordagem mais simples pode ser suficiente.
+        A escolha depende do contexto.
+      </div>
+    </section>
+
+    <!-- 14. EXEMPLO DE PROJETO -->
+    <section class="slide" id="taskflow">
+      <div class="section-head">
+        <span class="section-number">13 · EXEMPLO PRÁTICO</span>
+        <span class="section-label">CONHEÇA O PROJETO</span>
+      </div>
+
+      <h2>TaskFlow: organizar tarefas escolares.</h2>
+
+      <div class="split-layout">
+        <div>
+          <p class="lead">
+            Uma equipe fictícia decide construir um aplicativo web
+            para ajudar estudantes a organizar atividades, trabalhos
+            e prazos.
+          </p>
+
+          <div class="mini-stats">
+            <div><strong>2 semanas</strong><span>Exemplo de Sprint</span></div>
+            <div><strong>3 pessoas</strong><span>Equipe de exemplo</span></div>
+          </div>
+
+          <div class="feature-list">
+            <div class="feature"><span>01</span><div><h3>Product Owner</h3>
+              <p>Organiza as prioridades junto às necessidades dos estudantes.</p></div></div>
+            <div class="feature"><span>02</span><div><h3>Scrum Master</h3>
+              <p>Ajuda o time a aplicar o Scrum e lidar com impedimentos.</p></div></div>
+            <div class="feature"><span>03</span><div><h3>Developers</h3>
+              <p>Planejam, programam, integram e testam as funções.</p></div></div>
+          </div>
+        </div>
+
+        <div class="illustration-card">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
+            alt="Pessoa desenvolvendo um projeto em um notebook"
+          >
+          <div class="illustration-caption">
+            <span class="tag purple">PRODUTO FICTÍCIO</span>
+            <h3>Uma função de cada vez.</h3>
+            <p>Cadastro, login e tarefas formam os primeiros itens do produto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15. COMO O PROJETO É ORGANIZADO -->
+    <section class="slide" id="workflow">
+      <div class="section-head">
+        <span class="section-number">14 · EXEMPLO PRÁTICO</span>
+        <span class="section-label">ORGANIZANDO A SPRINT</span>
+      </div>
+
+      <h2>Do planejamento à <span class="gradient">revisão.</span></h2>
+
+      <div class="workflow">
+        <article class="workflow-step">
+          <span>01</span>
+          <h3>Priorizar</h3>
+          <p>O Product Owner ordena o Product Backlog.</p>
+        </article>
+        <article class="workflow-step">
+          <span>02</span>
+          <h3>Planejar</h3>
+          <p>O time define a Sprint Goal e seleciona itens.</p>
+        </article>
+        <article class="workflow-step">
+          <span>03</span>
+          <h3>Desenvolver</h3>
+          <p>Os Developers programam, integram e testam.</p>
+        </article>
+        <article class="workflow-step">
+          <span>04</span>
+          <h3>Inspecionar</h3>
+          <p>O time e os stakeholders avaliam o Incremento.</p>
+        </article>
+        <article class="workflow-step">
+          <span>05</span>
+          <h3>Melhorar</h3>
+          <p>A equipe define melhorias para o próximo ciclo.</p>
+        </article>
+      </div>
+
+      <div class="callout">
+        Resultado esperado: uma parte funcional do TaskFlow que atenda
+        à Definition of Done e possa receber feedback.
+      </div>
+    </section>
+
+    <!-- 16. QUADRO KANBAN -->
+    <section class="slide" id="quadro">
+      <div class="section-head">
+        <span class="section-number">15 · DEMONSTRAÇÃO</span>
+        <span class="section-label">QUADRO DO TASKFLOW</span>
+      </div>
+
+      <h2>Acompanhe as <span class="gradient">tarefas.</span></h2>
+
+      <p class="lead">
+        Arraste os cartões entre as colunas para simular a movimentação
+        do trabalho durante a Sprint.
+      </p>
+
+      <div class="board">
+        <div class="board-column" data-column="todo">
+          <h3><span class="board-dot todo"></span>A fazer</h3>
+          <div class="task" draggable="true" data-status="todo">
+            <small>US-01</small><b>Criar cadastro</b>
+            <p>Permitir que o estudante crie uma conta.</p>
+          </div>
+          <div class="task" draggable="true" data-status="todo">
+            <small>US-02</small><b>Adicionar tarefa</b>
+            <p>Registrar atividade e prazo.</p>
+          </div>
+        </div>
+
+        <div class="board-column" data-column="doing">
+          <h3><span class="board-dot doing"></span>Em andamento</h3>
+          <div class="task" draggable="true" data-status="doing">
+            <small>US-03</small><b>Desenvolver login</b>
+            <p>Permitir entrada segura no aplicativo.</p>
+          </div>
+        </div>
+
+        <div class="board-column" data-column="done">
+          <h3><span class="board-dot done"></span>Concluído</h3>
+          <div class="task" draggable="true" data-status="done">
+            <small>US-04</small><b>Definir requisitos</b>
+            <p>Necessidades do projeto identificadas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        Este quadro é uma simulação didática. Uma tarefa só deve ser
+        considerada concluída quando atender aos critérios de qualidade
+        definidos pela equipe.
+      </div>
+    </section>
+
+    <!-- 17. CONCLUSÃO -->
+    <section class="slide" id="conclusao">
+      <div class="section-head">
+        <span class="section-number">16 · CONCLUSÃO</span>
+        <span class="section-label">O QUE APRENDEMOS?</span>
+      </div>
+
+      <h2>Mais que velocidade, <span class="gradient">aprendizado.</span></h2>
+
+      <p class="lead">
+        Scrum organiza o trabalho para que a equipe entregue valor,
+        avalie resultados e melhore continuamente.
+      </p>
+
+      <div class="grid three">
+        <article class="panel conclusion-card">
+          <div class="icon-box">👥</div>
+          <h3>Pessoas</h3>
+          <p>Colaboração e responsabilidades claras.</p>
+        </article>
+        <article class="panel conclusion-card">
+          <div class="icon-box">🔁</div>
+          <h3>Processo</h3>
+          <p>Planejamento, desenvolvimento, inspeção e adaptação.</p>
+        </article>
+        <article class="panel conclusion-card">
+          <div class="icon-box">💡</div>
+          <h3>Resultado</h3>
+          <p>Feedback, aprendizado e entrega de valor.</p>
+        </article>
+      </div>
+
+      <div class="closing-banner">
+        <img
+          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
+          alt="Equipe trabalhando de forma colaborativa"
+        >
+        <div>
+          <span class="tag purple">MENSAGEM FINAL</span>
+          <h3>Inspecionar. Adaptar. Evoluir.</h3>
+          <p>
+            O sucesso não está apenas em terminar tarefas, mas em
+            construir algo útil e aprender durante o caminho.
+          </p>
+        </div>
+      </div>
+
+      <button class="primary-btn" id="start-quiz">
+        Começar o questionário →
+      </button>
+    </section>
+
+    <!-- AS DEZ PERGUNTAS SÃO ADICIONADAS PELO JAVASCRIPT -->
+    <section class="slide" id="quiz-placeholder"></section>
+
+    <!-- RESULTADO -->
+    <section class="slide" id="resultado">
+      <div class="section-head">
+        <span class="section-number">RESULTADO FINAL</span>
+        <span class="section-label">QUESTIONÁRIO SCRUM</span>
+      </div>
+      <div class="result-content" id="result-content"></div>
+      <button class="secondary-btn" id="retry-quiz">↻ Tentar novamente</button>
+    </section>
+
+    <!-- AGRADECIMENTO -->
+    <section class="slide thankyou" id="agradecimento">
+      <img
+        class="thankyou-photo"
+        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1600&q=85"
+        alt="Equipe reunida e colaborando"
+      >
+      <div class="thankyou-overlay"></div>
+      <div class="thankyou-content">
+        <div class="eyebrow"><span class="dot"></span> ENCERRAMENTO</div>
+        <h1>Muito obrigado<br><span class="gradient">pela atenção!</span></h1>
+        <p class="lead">
+          Esperamos que esta apresentação tenha ajudado a compreender
+          como o Scrum organiza equipes e melhora o desenvolvimento.
+        </p>
+        <div class="thankyou-pills">
+          <span>Colaboração</span>
+          <span>Aprendizado</span>
+          <span>Melhoria contínua</span>
+        </div>
+        <button class="primary-btn" id="back-to-start">↻ Voltar ao início</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="navigation">
+    <button id="prev" class="nav-btn" disabled>← Anterior</button>
+    <div class="nav-center">
+      <span id="slide-count">01 / 28</span>
+      <div id="dots" class="dots" aria-hidden="true"></div>
+    </div>
+    <button id="next" class="primary-btn">Próximo →</button>
+  </footer>
+</body>
+</html>
